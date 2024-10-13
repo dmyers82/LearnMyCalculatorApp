@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnMyCalculatorApp", "LearnMyCalculatorApp.csproj", "{A7BF1DA0-CC76-4FCB-9473-3473CCF2E86E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnMyCalculatorApp", "LearnMyCalculatorApp.csproj", "{A7BF1DA0-CC76-4FCB-9473-3473CCF2E86E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnMyCalculatorApp.Test", "..\LearnMyCalculatorApp.Test\LearnMyCalculatorApp.Test.csproj", "{C5BC09DF-924F-4FFC-A6D8-B39C4B228667}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnMyCalculatorApp.Test", "..\LearnMyCalculatorApp.Test\LearnMyCalculatorApp.Test.csproj", "{C5BC09DF-924F-4FFC-A6D8-B39C4B228667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnMyCalculatorApp.Test.Moq", "..\LearnMyCalculatorAppTestMoq\LearnMyCalculatorApp.Test.Moq.csproj", "{76E67880-A32B-4699-B185-74E09C6F58AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C5BC09DF-924F-4FFC-A6D8-B39C4B228667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5BC09DF-924F-4FFC-A6D8-B39C4B228667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5BC09DF-924F-4FFC-A6D8-B39C4B228667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E67880-A32B-4699-B185-74E09C6F58AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E67880-A32B-4699-B185-74E09C6F58AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E67880-A32B-4699-B185-74E09C6F58AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E67880-A32B-4699-B185-74E09C6F58AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -32,11 +32,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- template: Build.yml
+- template: Templates/Build.yml
   parameters:
     buildConfiguration: 'Debug'
 
-- template: Build.yml
+- template: Templates/Build.yml
   parameters:
     buildConfiguration: 'Release'
 

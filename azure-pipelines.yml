@@ -32,13 +32,14 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- template: Templates/Build.yml
-  parameters:
-    buildConfiguration: 'Debug'
-
-- template: Templates/Build.yml
-  parameters:
-    buildConfiguration: 'Release'
+- task: DotNetCoreCLI@2
+  displayName: 'Publish the project - Release'
+  inputs:
+    command: 'publish'
+    projects: '**/*.csproj'
+    publishWebProjects: false
+    arguments: '--no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
+    zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'

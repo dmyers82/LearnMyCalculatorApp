@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Templates - Copy\**" />
+    <EmbeddedResource Remove="Templates - Copy\**" />
+    <None Remove="Templates - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Moq" Version="4.20.72" />
   </ItemGroup>
 

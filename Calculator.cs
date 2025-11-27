@@ -27,5 +27,10 @@ namespace LearnMyCalculatorApp
         {
             return x / y;
         }
+
+        public decimal HexToDecimal(string hexValue)
+        {
+            return Convert.ToDecimal(Convert.ToInt32(hexValue, 16));
+        }
     }
 }

@@ -10,6 +10,7 @@
             Console.WriteLine("Subtract: " + calc.Subtract(100, 10));
             Console.WriteLine("Multiply: " + calc.Multiply(5, 5));
             Console.WriteLine("Divide: " + calc.Divide(400, 20));
+            Console.WriteLine("Hex to Decimal: " + calc.HexToDecimal("1A3F"));
             Console.ReadLine();
         }
     }

@@ -12,5 +12,7 @@ namespace LearnMyCalculatorApp
         int Subtract(int value1, int value2);
         int Multiply(int value1, int value2);
         int Divide(int value1, int value2);
+        decimal HexToDecimal(string hexValue);
+
     }
 }

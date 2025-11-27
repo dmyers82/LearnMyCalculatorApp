@@ -9,31 +9,8 @@ using System;
 
 namespace LearnMyCalculatorApp
 {
-    public class Calculator
-    {
-        public int Add(int x, int y)
-        {
-            return x + y;
-        }
 
-        public int Subtract(int x, int y)
-        {
-            return x - y;
-        }
-
-        public int Multiply(int x, int y)
-        {
-            return x * y;
-        }
-
-        public int Divide(int x, int y)
-        {
-            return x / y;
-        }
-
-    }
-
-    public static class HexUtility
+    public class HexUtility
     {
         /// <summary>
         /// Convert an integer to a hex string (uppercase).
@@ -96,6 +73,10 @@ namespace LearnMyCalculatorApp
                 sb.AppendLine();
             }
             return sb.ToString();
+        }
+        public decimal HexToDecimal(string hexValue)
+        {
+            return Convert.ToDecimal(Convert.ToInt32(hexValue, 16));
         }
     }
 }

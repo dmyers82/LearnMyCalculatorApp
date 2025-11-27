@@ -78,5 +78,11 @@ namespace LearnMyCalculatorApp
         {
             return Convert.ToDecimal(Convert.ToInt32(hexValue, 16));
         }
+
+        public string DecimalToHex(decimal decimalValue)
+        {
+            int intValue = Convert.ToInt32(decimalValue);
+            return intValue.ToString("X");
+        }
     }
 }
